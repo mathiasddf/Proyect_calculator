@@ -44,7 +44,7 @@ class Calculadora{
 			}
                         System.out.println("¿Desea hacer otra operacion? (si/no)");
                         String rpta = sc.next();
-                        if(rpta.equalsIgnoreCase("si")){
+                        if(rpta.equalsIgnoreCase("no")){
                             break;
                         }
 
