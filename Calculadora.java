@@ -26,6 +26,16 @@ class Calculadora{
          public static double multiplicacion( double x, double y){
             return x * y ;   
 	}
+        public static void division( double x, double y){
+            if( y == 0){
+                 return "error";
+            }
+            return x / y ;   
+	}
+        
+        
+        
+        
         
         	
 }
