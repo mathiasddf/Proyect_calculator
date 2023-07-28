@@ -17,5 +17,8 @@ class Calculadora{
 			return Math.sqrt(-1);
 		}
 	}
-		
+        public static double suma( double p, double q){
+            return p + q ;   
+	}
+        	
 }
