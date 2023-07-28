@@ -23,6 +23,9 @@ class Calculadora{
         public static double resta( double f, double g){
             return f - g ;   
 	}
+         public static double multiplicacion( double x, double y){
+            return x * y ;   
+	}
         
         	
 }
