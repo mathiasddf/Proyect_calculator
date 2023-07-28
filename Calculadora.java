@@ -1,11 +1,10 @@
 class Calculadora{
 	public static void main(String[] args){
-		System.out.println(Raiz(-27,3));
-		Raiz(-4,2);	
-
 		
+		//System.out.println(multiplicacion(5,3));	
+		potencia(5,4);
 	}
-	public static void Raiz( double n, double a){
+	public static void raiz( double n, double a){
 	    if(a == 0){
 			System.out.println("Indefinido") ;
 			return;
@@ -18,34 +17,32 @@ class Calculadora{
 				n=n*-1;
 		System.out.println(Math.pow(n,raiz)+" i");
 			}
-		}
-			
-			
+		}	
 	}
-        public static double suma( double p, double q){
-            return p + q ;   
+    public static double suma( double p, double q){
+        return p + q ;   
 	}
-        public static double resta( double f, double g){
-            return f - g ;   
+    public static double resta( double f, double g){
+        return f - g ;   
 	}
-         public static double multiplicacion( double x, double y){
-            return x * y ;   
+    public static double multiplicacion( double x, double y){
+        return x * y ;   
 	}
-        public static void division( double x, double y){
-            if( y == 0){
-                System.out.println("error");
-            }else{
+    public static void division( double x, double y){
+        if( y == 0){
+            System.out.println("error");
+        }else{
 		System.out.println(x/y);
 			}  
 	}
-       	public static void módulo(int x, int y){
+    public static void modulo(int x, int y){
 	    if(y == 0){
-	    	return "error"; 
+	    	System.out.println("error"); 
 	    }
-	    return x%y ;
+	    System.out.println ( x%y );
 	}
 	public static void potencia(double x, double y){
-	    return Math.pow(x,y);
+	    System.out.println( Math.pow(x,y));
 	}
         
         
