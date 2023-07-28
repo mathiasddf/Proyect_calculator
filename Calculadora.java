@@ -20,5 +20,9 @@ class Calculadora{
         public static double suma( double p, double q){
             return p + q ;   
 	}
+        public static double resta( double f, double g){
+            return f - g ;   
+	}
+        
         	
 }
