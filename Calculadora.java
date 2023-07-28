@@ -1,32 +1,10 @@
 class Calculadora{
 	public static void main(String[] args){
-<<<<<<< HEAD
 		System.out.println(Raiz(-27,3));
-=======
 		Raiz(-4,2);	
->>>>>>> e70488571194393e94933ae9a47df80f245283a3
+
 		
 	}
-	
-	
-<<<<<<< HEAD
-	public static double Raiz( double n, double a){
-	    if( a == 0){
-			return Math.sqrt(-1) ;
-		}
-		double raiz = 1/a;
-		if(n > 0) {
-			return Math.pow(n,raiz);
-		}
-		else if ((n < 0) && (a == 2)){
-		     return Math.sqrt(-1);
-		}
-		else if (( n < 0) && ( a > 2)){
-		     return Math.pow(n,raiz);
-		}
-		else{
-			return Math.sqrt(-1);
-=======
 	public static void Raiz( double n, double a){
 	    if(a == 0){
 			System.out.println("Indefinido") ;
@@ -40,7 +18,6 @@ class Calculadora{
 				n=n*-1;
 				System.out.println(Math.pow(n,raiz)+" i");
 			}
->>>>>>> e70488571194393e94933ae9a47df80f245283a3
 		}
 			
 			
