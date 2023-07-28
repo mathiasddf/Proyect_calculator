@@ -1,5 +1,21 @@
 class Calculadora{
 	public static void main(String[] args){
-		System.out.println("Hola mundo");
+		System.out.println(Raiz(-27,2));
+		
 	}
+	
+	
+	public static double Raiz( double n, double a){
+	    if( a <= 0){
+			return Math.sqrt(-1) ;
+		}
+		double raiz = 1/a;
+		if(n > 0){
+			return Math.pow(n,raiz);
+		}
+		else{
+			return Math.sqrt(-1);
+		}
+	}
+		
 }
