@@ -1,17 +1,23 @@
 class Calculadora{
 	public static void main(String[] args){
-		System.out.println(Raiz(-27,2));
+		System.out.println(Raiz(-27,3));
 		
 	}
 	
 	
 	public static double Raiz( double n, double a){
-	    if( a <= 0){
+	    if( a == 0){
 			return Math.sqrt(-1) ;
 		}
 		double raiz = 1/a;
-		if(n > 0){
+		if(n > 0) {
 			return Math.pow(n,raiz);
+		}
+		else if ((n < 0) && (a == 2)){
+		     return Math.sqrt(-1);
+		}
+		else if (( n < 0) && ( a > 2)){
+		     return Math.pow(n,raiz);
 		}
 		else{
 			return Math.sqrt(-1);
