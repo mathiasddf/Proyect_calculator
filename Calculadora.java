@@ -1,8 +1,47 @@
+import java.util.*;
 class Calculadora{
 	public static void main(String[] args){
-		
-		//System.out.println(multiplicacion(5,3));	
-		potencia(5,4);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese que operacion desea utilizar");
+		String[] operaciones = {"1:Suma","2:Resta","3:Multiplicacion","4:Division","5:Raiz","6:Potencia","7:Modulo"};
+		for(String operacion:operaciones){
+			System.out.println(operacion);
+		}
+		int op = sc.nextInt();
+		System.out.println("Ingrese dos numeros");
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		switch (op){
+			case 1:
+				double sum = suma(n1,n2);
+				System.out.println("Suma: "+sum);
+				break;
+			case 2:
+				double rest = resta(n1,n2);
+				System.out.println("Resta: "+rest);
+				break;
+			case 3:
+				double mult = multiplicacion(n1,n2);
+				System.out.println("Multiplicacion: "+mult);
+				break;
+			case 4:
+				System.out.print("Division: ");
+				division(n1,n2);
+				break;
+			case 5:
+			    System.out.print("Raiz: ");
+				raiz(n1,n2);
+				break;
+			case 6:
+				System.out.print("Potencia: ");
+				potencia(n1,n2);
+				break;
+			case 7:
+				System.out.print("Modulo: ");
+				modulo((int)n1,(int)(n2));
+				break;
+		}
+	
 	}
 	public static void raiz( double n, double a){
 	    if(a == 0){
@@ -30,7 +69,7 @@ class Calculadora{
 	}
     public static void division( double x, double y){
         if( y == 0){
-            System.out.println("error");
+            System.out.println("Indefinido");
         }else{
 		System.out.println(x/y);
 			}  
