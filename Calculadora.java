@@ -16,7 +16,7 @@ class Calculadora{
 		}else{
 			if(n<0){
 				n=n*-1;
-				System.out.println(Math.pow(n,raiz)+" i");
+		System.out.println(Math.pow(n,raiz)+" i");
 			}
 		}
 			
@@ -35,10 +35,18 @@ class Calculadora{
             if( y == 0){
                 System.out.println("error");
             }else{
-				System.out.println(x/y);
+		System.out.println(x/y);
 			}  
 	}
-        
+       	public static void módulo(int x, int y){
+	    if(y == 0){
+	    	return "error"; 
+	    }
+	    return x%y ;
+	}
+	public static void potencia(double x, double y){
+	    return Math.pow(x,y);
+	}
         
         
         
