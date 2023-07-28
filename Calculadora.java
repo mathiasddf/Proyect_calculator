@@ -1,21 +1,26 @@
 class Calculadora{
 	public static void main(String[] args){
-		System.out.println(Raiz(-27,2));
+		Raiz(-4,2);	
 		
 	}
 	
 	
-	public static double Raiz( double n, double a){
-	    if( a <= 0){
-			return Math.sqrt(-1) ;
+	public static void Raiz( double n, double a){
+	    if(a == 0){
+			System.out.println("Indefinido") ;
+			return;
 		}
 		double raiz = 1/a;
-		if(n > 0){
-			return Math.pow(n,raiz);
+		if(n >= 0){
+			System.out.println(Math.pow(n,raiz));
+		}else{
+			if(n<0){
+				n=n*-1;
+				System.out.println(Math.pow(n,raiz)+" i");
+			}
 		}
-		else{
-			return Math.sqrt(-1);
-		}
+			
+			
 	}
         public static double suma( double p, double q){
             return p + q ;   
@@ -28,9 +33,10 @@ class Calculadora{
 	}
         public static void division( double x, double y){
             if( y == 0){
-                 return "error";
-            }
-            return x / y ;   
+                System.out.println("error");
+            }else{
+				System.out.println(x/y);
+			}  
 	}
         
         
